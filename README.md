@@ -13,7 +13,6 @@ The page loads Airbnb listing data from a JSON file using fetch() and async/awai
 - Live search feature
 - Save/Favorite button
 
-
 ## Technologies Used
 
 - HTML
@@ -28,4 +27,4 @@ The page loads Airbnb listing data from a JSON file using fetch() and async/awai
 
 ## Live Website
 
-[Live Website]()
+[Live Website](https://shorenak.github.io/AirBNB_Listings/)

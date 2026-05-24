@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #ff385c;
+    background-color: #ff3838;
     color: white;
     padding: 20px;
     text-align: center;
@@ -55,14 +55,15 @@ header {
     margin-top: 10px;
 }
 
-.host img {
+.host-photo {
     width: 45px;
     height: 45px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .price {
-    color: #ff385c;
+    color: #ff3838;
     font-size: 20px;
     font-weight: bold;
 }
@@ -78,5 +79,5 @@ button {
 }
 
 button.saved {
-    background-color: #ff38a5;
+    background-color: #ff383b;
 }

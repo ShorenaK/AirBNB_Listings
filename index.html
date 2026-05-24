@@ -4,17 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Airbnb Listings</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header
-      <h1>Airbnb Listings</h1>
+       <header>
+        <h1>Airbnb Listings</h1>
+
+        <input
+            type="text"
+            id="searchBox"
+            placeholder="Search listings..."
+        >
     </header>
-    <img 
-    src="https://www.airbnb.com/rooms/958" 
-    alt="toumplain for picture">
-    <div class="host">Host: John Doe</div>
-    <div class="price"> price: %14</div>
-    
+
+    <main id="listings"></main>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

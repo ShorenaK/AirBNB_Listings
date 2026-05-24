@@ -89,8 +89,6 @@ function displayListings(listings) {
 
             amenities = "No amenities";
         }
-
-
         // ================================
         // HOST NAME
         // ================================
@@ -122,8 +120,6 @@ function displayListings(listings) {
             listing.images?.picture_url ||
             listing.images?.thumbnail_url ||
             "https://placehold.co/600x400?text=No+Image";
-
-
        
         // PRICE
         let price =
@@ -136,19 +132,18 @@ function displayListings(listings) {
 
             price = price.replace("$", "");
         }
-
-
         // ================================
         // CARD HTML
         // ================================
         card.innerHTML = `
 
             <!-- Listing Image -->
-            <img
-                class="thumbnail"
-                src="${thumbnail}"
-                alt="${name}"
-            >
+           <img
+    class="thumbnail"
+    src="${thumbnail}"
+    alt="${name}"
+    onerror="this.src='https://placehold.co/600x400?text=No+Image'"
+>
 
             <div class="card-content">
 
@@ -167,11 +162,12 @@ function displayListings(listings) {
                 <!-- Host Information -->
                 <div class="host">
 
-                    <img
-                        class="host-photo"
-                        src="${hostImage}"
-                        alt="${hostName}"
-                    >
+                  <img
+    class="host-photo"
+    src="${hostImage}"
+    alt="${hostName}"
+    onerror="this.src='https://placehold.co/100x100?text=Host'"
+>
 
                     <p>${hostName}</p>
 

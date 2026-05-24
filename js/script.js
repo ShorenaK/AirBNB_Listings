@@ -5,7 +5,7 @@ let allListings = [];
 
 async function loadListings() {
 
-    const response = await fetch("../airbnb_sf_listings_500.json");
+    const response = await fetch("airbnb_sf_listings_500.json");
     const data = await response.json();
 
     allListings = data.slice(0, 50);
